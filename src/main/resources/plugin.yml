@@ -1,0 +1,4 @@
+name: RandomItemDropsPlugin
+version: '${project.version}'
+main: org.seymourg_og.randomitemdropsplugin.RandomItemDropsPlugin
+api-version: '1.20'
