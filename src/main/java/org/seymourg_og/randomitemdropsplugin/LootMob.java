@@ -100,11 +100,7 @@ public class LootMob implements Listener {
     public void onMobSpawn(EntitySpawnEvent event) {
         Entity entity = event.getEntity();
 
-        if (entity instanceof Monster
-                && !(entity instanceof Spider)
-                && !(entity instanceof Enderman)
-                && !(entity instanceof Creeper)
-                && !(entity instanceof Endermite)) {
+        if (entity instanceof Zombie || entity instanceof Skeleton) {
             Monster monster = (Monster) entity;
             EntityEquipment equipment = monster.getEquipment();
             int randomValue = new Random().nextInt(6) + 1;
